@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | LS Publicidad & Eventos</title>
+    <meta name="description" content="Contáctanos para tu próximo proyecto de publicidad o evento. Respondemos en menos de 24 horas.">
+    <meta property="og:title" content="Contacto | LS Publicidad & Eventos">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{gold:'#D4AF37','gold-light':'#f0d060',dark:'#0a0a0a'},fontFamily:{syne:['Syne'],inter:['Inter']}}}}</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white font-inter">
+
+<!-- NAV -->
+<nav class="nav-main flex items-center justify-between">
+    <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
+    <div class="nav-links hidden md:flex items-center gap-8">
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="portafolio.html" class="nav-link">Portafolio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link" style="color:#D4AF37">Contacto</a>
+        <a href="https://wa.me/5219XXXXXXXXXX" class="hero-cta text-sm py-2 px-5" target="_blank"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp</a>
+    </div>
+    <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="portafolio.html">Portafolio</a><a href="nosotros.html">Nosotros</a><a href="contacto.html" style="color:#D4AF37">Contacto</a>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="pt-32 pb-16 px-6 text-center">
+    <span class="section-label" data-aos="fade-up">Planifica con nosotros</span>
+    <h1 class="font-syne text-4xl md:text-6xl font-extrabold mt-4" data-aos="fade-up">Planificador <span class="text-gradient">Inteligente</span></h1>
+    <p class="text-gray-400 mt-4 max-w-2xl mx-auto" data-aos="fade-up">Cuéntanos tu proyecto y te responderemos en menos de 24 horas con una propuesta personalizada.</p>
+</section>
+
+<!-- CONTACTO CONTENT -->
+<section class="pb-24 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
+        <!-- INFO -->
+        <div data-aos="fade-right">
+            <h2 class="font-syne text-2xl font-bold mb-8">Información de <span class="text-gradient">Contacto</span></h2>
+            <div class="space-y-6 mb-12">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2)">
+                        <i data-lucide="map-pin" style="width:22px;height:22px;color:#D4AF37"></i>
+                    </div>
+                    <div><p class="text-xs text-gray-500 uppercase tracking-wider">Ubicación</p><p class="text-white font-medium">Tu Ciudad, País</p></div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2)">
+                        <i data-lucide="phone" style="width:22px;height:22px;color:#D4AF37"></i>
+                    </div>
+                    <div><p class="text-xs text-gray-500 uppercase tracking-wider">Teléfono</p><p class="text-white font-medium">+52 19 XXXX XXXX</p></div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2)">
+                        <i data-lucide="mail" style="width:22px;height:22px;color:#D4AF37"></i>
+                    </div>
+                    <div><p class="text-xs text-gray-500 uppercase tracking-wider">Email</p><p class="text-white font-medium">info@lspublicidad.com</p></div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0" style="background:rgba(212,175,55,0.1);border:1px solid rgba(212,175,55,0.2)">
+                        <i data-lucide="clock" style="width:22px;height:22px;color:#D4AF37"></i>
+                    </div>
+                    <div><p class="text-xs text-gray-500 uppercase tracking-wider">Horario</p><p class="text-white font-medium">Lun - Vie: 9:00 AM - 6:00 PM</p></div>
+                </div>
+            </div>
+
+            <!-- REDES SOCIALES -->
+            <h3 class="font-syne font-bold text-lg mb-4">Síguenos</h3>
+            <div class="flex gap-4">
+                <a href="#" class="w-12 h-12 rounded-xl flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold hover:bg-gold/10 transition-all"><i data-lucide="facebook" style="width:20px;height:20px"></i></a>
+                <a href="#" class="w-12 h-12 rounded-xl flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold hover:bg-gold/10 transition-all"><i data-lucide="instagram" style="width:20px;height:20px"></i></a>
+                <a href="#" class="w-12 h-12 rounded-xl flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold hover:bg-gold/10 transition-all"><i data-lucide="twitter" style="width:20px;height:20px"></i></a>
+                <a href="https://wa.me/5219XXXXXXXXXX" target="_blank" class="w-12 h-12 rounded-xl flex items-center justify-center border border-gold/30 text-gold hover:bg-gold hover:text-dark transition-all"><i data-lucide="message-circle" style="width:20px;height:20px"></i></a>
+            </div>
+
+            <!-- WHATSAPP DIRECTO -->
+            <div class="glass-card mt-10" data-aos="fade-up" data-aos-delay="200">
+                <h3 class="font-syne font-bold mb-3 flex items-center gap-2"><i data-lucide="zap" style="width:18px;height:18px;color:#D4AF37"></i> Respuesta Inmediata</h3>
+                <p class="text-gray-400 text-sm mb-4">¿Necesitas una respuesta rápida? Escríbenos directamente por WhatsApp.</p>
+                <a href="https://wa.me/5219XXXXXXXXXX?text=Hola%20LS%2C%20quiero%20información%20de%20sus%20servicios" class="btn-whatsapp" target="_blank" style="background:#D4AF37;color:#0a0a0a;border-color:#D4AF37;font-weight:700"><i data-lucide="message-circle" style="width:18px;height:18px"></i> Abrir WhatsApp</a>
+            </div>
+        </div>
+
+        <!-- SMART FORM -->
+        <div data-aos="fade-left">
+            <form id="smartForm" class="glass-card">
+                <h3 class="font-syne text-xl font-bold mb-6 text-center">Cuéntanos tu proyecto</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group"><input type="text" class="form-input" id="fname" required placeholder=" "><label class="form-label" for="fname">Nombre</label><p class="form-error"></p></div>
+                    <div class="form-group"><input type="text" class="form-input" id="lname" required placeholder=" "><label class="form-label" for="lname">Apellido</label><p class="form-error"></p></div>
+                </div>
+                <div class="form-group"><input type="email" class="form-input" id="email" required placeholder=" "><label class="form-label" for="email">Email</label><p class="form-error"></p></div>
+                <div class="form-group"><input type="tel" class="form-input" id="phone" required placeholder=" "><label class="form-label" for="phone">Teléfono</label><p class="form-error"></p></div>
+                <div class="form-group">
+                    <select class="form-input" id="service" style="padding-top:1.5rem;color:#fff">
+                        <option value="" style="color:#333">Seleccionar servicio</option>
+                        <option value="publicidad" style="color:#333">Publicidad</option>
+                        <option value="eventos" style="color:#333">Eventos</option>
+                        <option value="imprenta" style="color:#333">Imprenta</option>
+                        <option value="rotulacion" style="color:#333">Rotulación</option>
+                        <option value="activaciones" style="color:#333">Activaciones BTL</option>
+                        <option value="branding" style="color:#333">Branding</option>
+                        <option value="inflables" style="color:#333">Inflables</option>
+                    </select>
+                    <label class="form-label" for="service" style="top:0.6rem;transform:translateY(0);font-size:0.7rem;color:#D4AF37;letter-spacing:0.05em;text-transform:uppercase">Servicio de Interés</label>
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="form-group"><input type="date" class="form-input" id="eventDate" placeholder=" " style="color-scheme:dark"><label class="form-label" for="eventDate" style="top:0.6rem;transform:translateY(0);font-size:0.7rem;color:#D4AF37;letter-spacing:0.05em;text-transform:uppercase">Fecha del Evento</label></div>
+                    <div class="form-group">
+                        <select class="form-input" id="budget" style="padding-top:1.5rem;color:#fff">
+                            <option value="" style="color:#333">Seleccionar</option>
+                            <option value="5k-10k" style="color:#333">$5,000 - $10,000</option>
+                            <option value="10k-25k" style="color:#333">$10,000 - $25,000</option>
+                            <option value="25k-50k" style="color:#333">$25,000 - $50,000</option>
+                            <option value="50k+" style="color:#333">$50,000+</option>
+                        </select>
+                        <label class="form-label" for="budget" style="top:0.6rem;transform:translateY(0);font-size:0.7rem;color:#D4AF37;letter-spacing:0.05em;text-transform:uppercase">Presupuesto</label>
+                    </div>
+                </div>
+                <div class="form-group"><input type="text" class="form-input" id="location" placeholder=" "><label class="form-label" for="location">Ubicación del Evento</label></div>
+                <div class="form-group"><textarea class="form-input" id="message" rows="4" required placeholder=" " style="resize:none"></textarea><label class="form-label" for="message">Cuéntanos tu proyecto</label><p class="form-error"></p></div>
+                <button type="submit" class="btn-submit"><i data-lucide="send" style="width:18px;height:18px;display:inline;vertical-align:middle;margin-right:8px"></i>Enviar Planificación</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- MAP PLACEHOLDER -->
+<section class="border-t border-white/5">
+    <div style="height:300px;background:linear-gradient(135deg,#0f0f1a,#1a1a2e,#0a0a14);display:flex;align-items:center;justify-content:center">
+        <div class="text-center">
+            <i data-lucide="map" style="width:48px;height:48px;color:#D4AF37;margin:0 auto;display:block;margin-bottom:1rem"></i>
+            <p class="text-gray-500 text-sm">Mapa interactivo — Próximamente</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="md:col-span-2"><img src="logo.png" alt="LS Publicidad" style="height:50px;filter:invert(1) brightness(2)" class="mb-4"><p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos premium.</p></div>
+            <div><h4 class="font-syne font-bold text-white mb-4">Navegación</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-gold transition-colors">Inicio</a></li><li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li><li><a href="portafolio.html" class="hover:text-gold transition-colors">Portafolio</a></li><li><a href="nosotros.html" class="hover:text-gold transition-colors">Nosotros</a></li></ul></div>
+            <div><h4 class="font-syne font-bold text-white mb-4">Contacto</h4><ul class="space-y-2 text-sm text-gray-400"><li>info@lspublicidad.com</li><li>+52 19 XXXX XXXX</li></ul></div>
+        </div>
+        <div class="border-t border-white/5 pt-8 text-center"><p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos.</p></div>
+    </div>
+</footer>
+
+<a href="https://wa.me/5219XXXXXXXXXX" class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110" style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank"><i data-lucide="message-circle" style="width:24px;height:24px;color:#0a0a0a"></i></a>
+<script src="app.js"></script>
+</body>
+</html>

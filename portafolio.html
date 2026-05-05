@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | LS Publicidad & Eventos</title>
+    <meta name="description" content="Portafolio de trabajos de LS Publicidad & Eventos. Diseño, branding, eventos y activaciones BTL.">
+    <meta property="og:title" content="Portafolio | LS Publicidad & Eventos">
+    <meta property="og:image" content="logo.png">
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config={theme:{extend:{colors:{gold:'#D4AF37','gold-light':'#f0d060',dark:'#0a0a0a'},fontFamily:{syne:['Syne'],inter:['Inter']}}}}</script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-dark text-white font-inter">
+
+<!-- NAV -->
+<nav class="nav-main flex items-center justify-between">
+    <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
+    <div class="nav-links hidden md:flex items-center gap-8">
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="portafolio.html" class="nav-link" style="color:#D4AF37">Portafolio</a>
+        <a href="nosotros.html" class="nav-link">Nosotros</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="https://wa.me/5219XXXXXXXXXX" class="hero-cta text-sm py-2 px-5" target="_blank"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp</a>
+    </div>
+    <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="portafolio.html" style="color:#D4AF37">Portafolio</a><a href="nosotros.html">Nosotros</a><a href="contacto.html">Contacto</a>
+</div>
+
+<!-- PAGE HEADER -->
+<section class="pt-32 pb-16 px-6 text-center">
+    <span class="section-label" data-aos="fade-up">Nuestro trabajo</span>
+    <h1 class="font-syne text-4xl md:text-6xl font-extrabold mt-4" data-aos="fade-up">Showroom <span class="text-gradient">Creativo</span></h1>
+    <p class="text-gray-400 mt-4 max-w-2xl mx-auto" data-aos="fade-up">Explora nuestros proyectos más destacados en diseño, branding y producción de eventos.</p>
+</section>
+
+<!-- FILTROS -->
+<div class="flex justify-center gap-3 mb-12 px-6 flex-wrap" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="diseno">Diseño</button>
+    <button class="filter-btn" data-filter="btl">BTL / Eventos</button>
+    <button class="filter-btn" data-filter="imprenta">Imprenta</button>
+</div>
+
+<!-- GALERÍA MASONRY -->
+<section class="pb-24 px-6">
+    <div class="max-w-6xl mx-auto masonry" data-aos="fade-up">
+        <div class="masonry-item" data-category="diseno" data-title="Campaña de Branding" data-desc="Identidad visual completa para marca premium de moda">
+            <div class="placeholder-img" style="height:280px;background:linear-gradient(135deg,#1a1a2e,#16213e,#0f3460)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Campaña de Branding</p><p class="text-gray-400 text-sm">Diseño</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="btl" data-title="Evento Corporativo" data-desc="Producción integral de evento para 500 asistentes">
+            <div class="placeholder-img" style="height:350px;background:linear-gradient(135deg,#2e1a0a,#4a2c1a,#1a0a00)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Evento Corporativo</p><p class="text-gray-400 text-sm">BTL / Eventos</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="diseno" data-title="Diseño Editorial" data-desc="Catálogo de productos premium con fotografía profesional">
+            <div class="placeholder-img" style="height:300px;background:linear-gradient(135deg,#0a2e1a,#1a4a2c,#0a1a00)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Diseño Editorial</p><p class="text-gray-400 text-sm">Diseño</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="btl" data-title="Activación BTL" data-desc="Experiencia interactiva de marca en centro comercial">
+            <div class="placeholder-img" style="height:260px;background:linear-gradient(135deg,#2e0a2e,#4a1a4a,#1a001a)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Activación BTL</p><p class="text-gray-400 text-sm">BTL / Eventos</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="imprenta" data-title="Material POP" data-desc="Diseño e impresión de material punto de venta para cadena retail">
+            <div class="placeholder-img" style="height:320px;background:linear-gradient(135deg,#1a2e0a,#2c4a1a,#0a1a00)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Material POP</p><p class="text-gray-400 text-sm">Imprenta</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="btl" data-title="Inflable Publicitario" data-desc="Réplica de producto gigante para lanzamiento de marca">
+            <div class="placeholder-img" style="height:290px;background:linear-gradient(135deg,#2e2e0a,#4a4a1a,#1a1a00)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Inflable Publicitario</p><p class="text-gray-400 text-sm">BTL / Eventos</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="diseno" data-title="Identidad Visual" data-desc="Logo y manual de marca para startup tech">
+            <div class="placeholder-img" style="height:270px;background:linear-gradient(135deg,#0a1a2e,#1a2c4a,#000a1a)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Identidad Visual</p><p class="text-gray-400 text-sm">Diseño</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="imprenta" data-title="Rotulación Vehicular" data-desc="Branding completo para flota de vehículos corporativos">
+            <div class="placeholder-img" style="height:310px;background:linear-gradient(135deg,#2e1a1a,#4a2c2c,#1a0a0a)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Rotulación Vehicular</p><p class="text-gray-400 text-sm">Imprenta</p></div></div>
+        </div>
+        <div class="masonry-item" data-category="btl" data-title="Lanzamiento de Producto" data-desc="Evento de lanzamiento con escenografía premium y LED walls">
+            <div class="placeholder-img" style="height:340px;background:linear-gradient(135deg,#1a0a2e,#2c1a4a,#0a001a)"></div>
+            <div class="item-overlay"><div><p class="font-syne font-bold">Lanzamiento de Producto</p><p class="text-gray-400 text-sm">BTL / Eventos</p></div></div>
+        </div>
+    </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="portfolioModal">
+    <div class="modal-content w-full max-w-2xl px-4">
+        <button class="modal-close">&times;</button>
+        <div id="modalImage" class="mb-6"></div>
+        <h3 id="modalTitle" class="font-syne text-2xl font-bold mb-2"></h3>
+        <p id="modalDesc" class="text-gray-400"></p>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
+    <div class="max-w-6xl mx-auto">
+        <div class="grid md:grid-cols-4 gap-12 mb-12">
+            <div class="md:col-span-2"><img src="logo.png" alt="LS Publicidad" style="height:50px;filter:invert(1) brightness(2)" class="mb-4"><p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos premium.</p></div>
+            <div><h4 class="font-syne font-bold text-white mb-4">Navegación</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-gold transition-colors">Inicio</a></li><li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li><li><a href="nosotros.html" class="hover:text-gold transition-colors">Nosotros</a></li><li><a href="contacto.html" class="hover:text-gold transition-colors">Contacto</a></li></ul></div>
+            <div><h4 class="font-syne font-bold text-white mb-4">Contacto</h4><ul class="space-y-2 text-sm text-gray-400"><li>info@lspublicidad.com</li><li>+52 19 XXXX XXXX</li></ul></div>
+        </div>
+        <div class="border-t border-white/5 pt-8 text-center"><p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos.</p></div>
+    </div>
+</footer>
+
+<a href="https://wa.me/5219XXXXXXXXXX" class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110" style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank"><i data-lucide="message-circle" style="width:24px;height:24px;color:#0a0a0a"></i></a>
+<script src="app.js"></script>
+</body>
+</html>
