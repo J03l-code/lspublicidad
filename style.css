@@ -83,6 +83,18 @@ body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; overf
 .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -6px); background: #D4AF37; }
 
 /* === HERO SPLIT === */
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+    opacity: 0.8;
+}
+.hero-left .overlay, .hero-right .overlay { z-index: 2; }
+.hero-content { z-index: 3; }
+
 .hero-split { display: flex; height: 100vh; overflow: hidden; }
 .hero-half {
     flex: 1; position: relative; display: flex; align-items: center; justify-content: center;
