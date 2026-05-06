@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,174 +13,236 @@
     <meta name="twitter:card" content="summary_large_image">
     <link rel="icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{colors:{gold:'#D4AF37','gold-light':'#f0d060',dark:'#0a0a0a'},fontFamily:{syne:['Syne'],inter:['Inter']}}}}</script>
+    <script>tailwind.config = { theme: { extend: { colors: { gold: '#D4AF37', 'gold-light': '#f0d060', dark: '#0a0a0a' }, fontFamily: { syne: ['Syne'], inter: ['Inter'] } } } }</script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="style.css?v=1778030282689">
 </head>
+
 <body class="bg-dark text-white font-inter">
 
-<!-- NAV -->
-<nav class="nav-main flex items-center justify-between">
-    <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
-    <div class="nav-links hidden md:flex items-center gap-8">
-        <a href="servicios.html" class="nav-link">Servicios</a>
-        <a href="portafolio.html" class="nav-link">Portafolio</a>
-        <a href="nosotros.html" class="nav-link">Nosotros</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
-        <a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información" class="hero-cta text-sm py-2 px-5" target="_blank">
-            <i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp
-        </a>
-    </div>
-    <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
-</nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="servicios.html">Servicios</a>
-    <a href="portafolio.html">Portafolio</a>
-    <a href="nosotros.html">Nosotros</a>
-    <a href="contacto.html">Contacto</a>
-    <a href="https://wa.me/593987393431" style="color:#D4AF37">WhatsApp</a>
-</div>
-
-<!-- HERO SPLIT SCREEN -->
-<section class="hero-split" id="hero">
-    <div class="hero-half hero-left">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <span class="hero-badge" data-aos="fade-down">Creatividad sin límites</span>
-            <h1 class="font-syne text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Agencia<br><span class="text-gradient">Creativa</span></h1>
-            <p class="text-gray-400 mb-8 max-w-md mx-auto text-sm md:text-base" data-aos="fade-up" data-aos-delay="100">Diseñamos estrategias de publicidad, branding e imprenta que hacen crecer tu marca.</p>
-            <a href="servicios.html" class="hero-cta" data-aos="fade-up" data-aos-delay="200">
-                <i data-lucide="palette" style="width:18px;height:18px"></i> Explorar Servicios
+    <!-- NAV -->
+    <nav class="nav-main flex items-center justify-between">
+        <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
+        <div class="nav-links hidden md:flex items-center gap-8">
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="portafolio.html" class="nav-link">Portafolio</a>
+            <a href="nosotros.html" class="nav-link">Nosotros</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+            <a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información"
+                class="hero-cta text-sm py-2 px-5" target="_blank">
+                <i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp
             </a>
         </div>
+        <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="servicios.html">Servicios</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="https://wa.me/593987393431" style="color:#D4AF37">WhatsApp</a>
     </div>
-    <div class="hero-divider hidden md:block"></div>
-    <div class="hero-half hero-right">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <span class="hero-badge" data-aos="fade-down">Experiencias inolvidables</span>
-            <h2 class="font-syne text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Productora de<br><span class="text-gradient">Eventos</span></h2>
-            <p class="text-gray-400 mb-8 max-w-md mx-auto text-sm md:text-base" data-aos="fade-up" data-aos-delay="100">Producimos eventos, activaciones BTL e inflables que impactan a tu audiencia.</p>
-            <a href="contacto.html" class="hero-cta" data-aos="fade-up" data-aos-delay="200">
-                <i data-lucide="party-popper" style="width:18px;height:18px"></i> Planificar Evento
-            </a>
+
+    <!-- HERO SPLIT SCREEN -->
+    <section class="hero-split" id="hero">
+        <div class="hero-half hero-left">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge" data-aos="fade-down">Creatividad sin límites</span>
+                <h1 class="font-syne text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Agencia<br><span
+                        class="text-gradient">Creativa</span></h1>
+                <p class="text-gray-400 mb-8 max-w-md mx-auto text-sm md:text-base" data-aos="fade-up"
+                    data-aos-delay="100">Diseñamos estrategias de publicidad, branding e imprenta que hacen crecer tu
+                    marca.</p>
+                <a href="servicios.html" class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="palette" style="width:18px;height:18px"></i> Explorar Servicios
+                </a>
+            </div>
         </div>
-    </div>
-</section>
-
-<!-- STATS BAR -->
-<section class="py-12 border-y border-white/5">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-        <div data-aos="fade-up"><span class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="150" data-suffix="+">0+</span><p class="text-gray-500 text-sm mt-2">Proyectos Completados</p></div>
-        <div data-aos="fade-up" data-aos-delay="100"><span class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="80" data-suffix="+">0+</span><p class="text-gray-500 text-sm mt-2">Clientes Satisfechos</p></div>
-        <div data-aos="fade-up" data-aos-delay="200"><span class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="7">0</span><p class="text-gray-500 text-sm mt-2">Servicios Especializados</p></div>
-        <div data-aos="fade-up" data-aos-delay="300"><span class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="5" data-suffix="+">0+</span><p class="text-gray-500 text-sm mt-2">Años de Experiencia</p></div>
-    </div>
-</section>
-
-<!-- QUICK PREVIEW: SERVICIOS -->
-<section class="py-24 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-        <span class="section-label" data-aos="fade-up">Lo que hacemos</span>
-        <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4 mb-6" data-aos="fade-up">Nuestros <span class="text-gradient">Servicios</span></h2>
-        <p class="text-gray-400 max-w-2xl mx-auto mb-12" data-aos="fade-up">Soluciones integrales de publicidad y eventos para impulsar tu marca al siguiente nivel.</p>
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-            <div class="service-card text-center" data-aos="fade-up"><div class="service-icon mx-auto"><i data-lucide="megaphone"></i></div><h3 class="font-syne font-bold mt-4">Publicidad</h3></div>
-            <div class="service-card text-center" data-aos="fade-up" data-aos-delay="100"><div class="service-icon mx-auto"><i data-lucide="calendar-check"></i></div><h3 class="font-syne font-bold mt-4">Eventos</h3></div>
-            <div class="service-card text-center" data-aos="fade-up" data-aos-delay="200"><div class="service-icon mx-auto"><i data-lucide="gem"></i></div><h3 class="font-syne font-bold mt-4">Branding</h3></div>
-            <div class="service-card text-center" data-aos="fade-up" data-aos-delay="300"><div class="service-icon mx-auto"><i data-lucide="zap"></i></div><h3 class="font-syne font-bold mt-4">Activaciones</h3></div>
+        <div class="hero-divider hidden md:block"></div>
+        <div class="hero-half hero-right">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <span class="hero-badge" data-aos="fade-down">Experiencias inolvidables</span>
+                <h2 class="font-syne text-4xl md:text-6xl font-extrabold mb-4" data-aos="fade-up">Productora de<br><span
+                        class="text-gradient">Eventos</span></h2>
+                <p class="text-gray-400 mb-8 max-w-md mx-auto text-sm md:text-base" data-aos="fade-up"
+                    data-aos-delay="100">Producimos eventos, activaciones BTL e inflables que impactan a tu audiencia.
+                </p>
+                <a href="contacto.html" class="hero-cta" data-aos="fade-up" data-aos-delay="200">
+                    <i data-lucide="party-popper" style="width:18px;height:18px"></i> Planificar Evento
+                </a>
+            </div>
         </div>
-        <a href="servicios.html" class="hero-cta inline-flex" data-aos="fade-up">Ver todos los servicios <i data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
-    </div>
-</section>
+    </section>
 
-<!-- TRUSTED BY MARQUEE -->
-<section class="py-16 border-y border-white/5">
-    <p class="text-center text-gray-500 text-xs tracking-widest uppercase mb-8" data-aos="fade-up">Confían en nosotros</p>
-    <div class="marquee-container">
-        <div class="marquee-track">
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">EMPRESA A</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">MARCA B</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">GRUPO C</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">CORP D</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">BRAND E</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">STARTUP F</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">EMPRESA A</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">MARCA B</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">GRUPO C</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">CORP D</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">BRAND E</span>
-            <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">STARTUP F</span>
+    <!-- STATS BAR -->
+    <section class="py-12 border-y border-white/5">
+        <div class="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div data-aos="fade-up"><span class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter"
+                    data-target="150" data-suffix="+">0+</span>
+                <p class="text-gray-500 text-sm mt-2">Proyectos Completados</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="100"><span
+                    class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="80"
+                    data-suffix="+">0+</span>
+                <p class="text-gray-500 text-sm mt-2">Clientes Satisfechos</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200"><span
+                    class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="7">0</span>
+                <p class="text-gray-500 text-sm mt-2">Servicios Especializados</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300"><span
+                    class="text-3xl md:text-4xl font-syne font-extrabold text-gradient counter" data-target="5"
+                    data-suffix="+">0+</span>
+                <p class="text-gray-500 text-sm mt-2">Años de Experiencia</p>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- CTA FINAL -->
-<section class="py-24 px-6 text-center">
-    <div class="max-w-3xl mx-auto" data-aos="fade-up">
-        <h2 class="font-syne text-3xl md:text-5xl font-extrabold mb-6">¿Listo para <span class="text-gradient">impulsar</span> tu marca?</h2>
-        <p class="text-gray-400 mb-10 text-lg">Cuéntanos tu idea y la convertimos en realidad. Respondemos en menos de 24 horas.</p>
-        <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="contacto.html" class="hero-cta"><i data-lucide="send" style="width:18px;height:18px"></i> Planificar Proyecto</a>
-            <a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información" class="hero-cta" style="background:#D4AF37;color:#0a0a0a" target="_blank"><i data-lucide="message-circle" style="width:18px;height:18px"></i> WhatsApp Directo</a>
-        </div>
-    </div>
-</section>
-
-<!-- MAP SECTION -->
-<section class="border-t border-white/5 w-full">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d997.4486730987879!2d-78.43659752297262!3d-0.1971851874591212!3m2!1i1024!2i768!4f13.1!2m1!1sav.%20interoceanica%2C%20y%2C%20Quito%20170157%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1778025750137!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-4 gap-12 mb-12">
-            <div class="md:col-span-2">
-                <img src="logo.png" alt="LS Publicidad" style="height:50px;filter:invert(1) brightness(2)" class="mb-4">
-                <p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos premium. Transformamos ideas en experiencias memorables.</p>
-                <div class="flex gap-4 mt-6">
-                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i data-lucide="facebook" style="width:18px;height:18px"></i></a>
-                    <a href="https://www.instagram.com/lspublicidad.eventos/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i data-lucide="instagram" style="width:18px;height:18px"></i></a>
-                    <a href="#" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i data-lucide="twitter" style="width:18px;height:18px"></i></a>
+    <!-- QUICK PREVIEW: SERVICIOS -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <span class="section-label" data-aos="fade-up">Lo que hacemos</span>
+            <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4 mb-6" data-aos="fade-up">Nuestros <span
+                    class="text-gradient">Servicios</span></h2>
+            <p class="text-gray-400 max-w-2xl mx-auto mb-12" data-aos="fade-up">Soluciones integrales de publicidad y
+                eventos para impulsar tu marca al siguiente nivel.</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+                <div class="service-card text-center" data-aos="fade-up">
+                    <div class="service-icon mx-auto"><i data-lucide="megaphone"></i></div>
+                    <h3 class="font-syne font-bold mt-4">Publicidad</h3>
+                </div>
+                <div class="service-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon mx-auto"><i data-lucide="calendar-check"></i></div>
+                    <h3 class="font-syne font-bold mt-4">Eventos</h3>
+                </div>
+                <div class="service-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon mx-auto"><i data-lucide="gem"></i></div>
+                    <h3 class="font-syne font-bold mt-4">Branding</h3>
+                </div>
+                <div class="service-card text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon mx-auto"><i data-lucide="zap"></i></div>
+                    <h3 class="font-syne font-bold mt-4">Activaciones</h3>
                 </div>
             </div>
-            <div>
-                <h4 class="font-syne font-bold text-white mb-4">Navegación</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li>
-                    <li><a href="portafolio.html" class="hover:text-gold transition-colors">Portafolio</a></li>
-                    <li><a href="nosotros.html" class="hover:text-gold transition-colors">Nosotros</a></li>
-                    <li><a href="contacto.html" class="hover:text-gold transition-colors">Contacto</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-syne font-bold text-white mb-4">Contacto</h4>
-                <ul class="space-y-2 text-sm text-gray-400">
-                    <li>Laserstudiocumbaya@gmail.com</li>
-                    <li>+593 98 739 3431</li>
-                    <li>Cumbayá, Quito 170157, Ecuador</li>
-                </ul>
+            <a href="servicios.html" class="hero-cta inline-flex" data-aos="fade-up">Ver todos los servicios <i
+                    data-lucide="arrow-right" style="width:16px;height:16px"></i></a>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY MARQUEE -->
+    <section class="py-16 border-y border-white/5">
+        <p class="text-center text-gray-500 text-xs tracking-widest uppercase mb-8" data-aos="fade-up">Confían en
+            nosotros</p>
+        <div class="marquee-container">
+            <div class="marquee-track">
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">EMPRESA A</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">MARCA B</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">GRUPO C</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">CORP D</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">BRAND E</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">STARTUP F</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">EMPRESA A</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">MARCA B</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">GRUPO C</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">CORP D</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">BRAND E</span>
+                <span class="text-2xl font-syne font-bold text-white/20 flex-shrink-0">STARTUP F</span>
             </div>
         </div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 px-6">
-            <p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos. Todos los derechos reservados.</p>
-            <a href="#" class="text-gray-500 text-xs tracking-[0.15em] font-syne group hover:text-white transition-all duration-300 uppercase flex items-center gap-2">
-                Desarrollado por <span class="text-gradient font-bold group-hover:drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-all">JiyaneDesign</span>
-                <i data-lucide="sparkles" style="width:14px;height:14px;color:#D4AF37"></i>
-            </a>
-        </div>\n        </div>
-</footer>
+    </section>
 
-<!-- WHATSAPP FLOAT -->
-<a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información" class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110" style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank" aria-label="WhatsApp">
-    <i data-lucide="message-circle" style="width:24px;height:24px;color:#0a0a0a"></i>
-</a>
+    <!-- CTA FINAL -->
+    <section class="py-24 px-6 text-center">
+        <div class="max-w-3xl mx-auto" data-aos="fade-up">
+            <h2 class="font-syne text-3xl md:text-5xl font-extrabold mb-6">¿Listo para <span
+                    class="text-gradient">impulsar</span> tu marca?</h2>
+            <p class="text-gray-400 mb-10 text-lg">Cuéntanos tu idea y la convertimos en realidad. Respondemos en menos
+                de 24 horas.</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contacto.html" class="hero-cta"><i data-lucide="send" style="width:18px;height:18px"></i>
+                    Planificar Proyecto</a>
+                <a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información" class="hero-cta"
+                    style="background:#D4AF37;color:#0a0a0a" target="_blank"><i data-lucide="message-circle"
+                        style="width:18px;height:18px"></i> WhatsApp Directo</a>
+            </div>
+        </div>
+    </section>
 
-<script src="app.js?v=1778030282689"></script>
+    <!-- MAP SECTION -->
+    <section class="border-t border-white/5 w-full">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d997.4486730987879!2d-78.43659752297262!3d-0.1971851874591212!3m2!1i1024!2i768!4f13.1!2m1!1sav.%20interoceanica%2C%20y%2C%20Quito%20170157%2C%20Ecuador!5e0!3m2!1ses!2sec!4v1778025750137!5m2!1ses!2sec"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2">
+                    <img src="logo.png" alt="LS Publicidad" style="height:50px;filter:invert(1) brightness(2)"
+                        class="mb-4">
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos
+                        premium. Transformamos ideas en experiencias memorables.</p>
+                    <div class="flex gap-4 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i
+                                data-lucide="facebook" style="width:18px;height:18px"></i></a>
+                        <a href="https://www.instagram.com/lspublicidad.eventos/" target="_blank"
+                            class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i
+                                data-lucide="instagram" style="width:18px;height:18px"></i></a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><i
+                                data-lucide="twitter" style="width:18px;height:18px"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-syne font-bold text-white mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li>
+                        <li><a href="portafolio.html" class="hover:text-gold transition-colors">Portafolio</a></li>
+                        <li><a href="nosotros.html" class="hover:text-gold transition-colors">Nosotros</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold transition-colors">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-syne font-bold text-white mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Laserstudiocumbaya@gmail.com</li>
+                        <li>+593 98 739 3431</li>
+                        <li>Cumbayá, Quito 170157, Ecuador</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 px-6">
+                <p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos. Todos los derechos reservados.</p>
+                <a href="#"
+                    class="text-gray-500 text-xs tracking-[0.15em] font-syne group hover:text-white transition-all duration-300 uppercase flex items-center gap-2">
+                    Desarrollado por <span
+                        class="text-gradient font-bold group-hover:drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-all">JiyaneDesign</span>
+                    <i data-lucide="sparkles" style="width:14px;height:14px;color:#D4AF37"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WHATSAPP FLOAT -->
+    <a href="https://wa.me/593987393431?text=Hola%20LS%2C%20quiero%20información"
+        class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110"
+        style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank" aria-label="WhatsApp">
+        <i data-lucide="message-circle" style="width:24px;height:24px;color:#0a0a0a"></i>
+    </a>
+
+    <script src="app.js?v=1778030282689"></script>
 </body>
+
 </html>
