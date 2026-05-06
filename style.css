@@ -94,9 +94,11 @@ body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; overf
     position: absolute; inset: 0;
     transition: opacity 0.7s;
 }
-.hero-left .overlay { background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%); }
-.hero-right .overlay { background: linear-gradient(135deg, #1a0a2e 0%, #0a0a0a 50%, #2e1a0a 100%); }
-.hero-half:hover .overlay { opacity: 0.8; }
+.hero-left { background: url('img/hero-creative.png') center/cover no-repeat; }
+.hero-right { background: url('img/hero-event.png') center/cover no-repeat; }
+.hero-left .overlay { background: rgba(10, 10, 15, 0.7); }
+.hero-right .overlay { background: rgba(15, 10, 10, 0.7); }
+.hero-half:hover .overlay { background: rgba(0, 0, 0, 0.4); }
 .hero-content {
     position: relative; z-index: 2; text-align: center; padding: 2rem;
     transform: translateY(0); transition: transform 0.5s;
