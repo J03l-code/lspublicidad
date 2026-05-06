@@ -32,7 +32,7 @@ body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; overf
     padding: 1rem 2rem;
     border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
-.nav-logo { height: 40px; filter: invert(1) brightness(2); transition: transform 0.3s; }
+.nav-logo { height: 55px; filter: invert(1) brightness(2); transition: transform 0.3s; }
 .nav-logo:hover { transform: scale(1.05); }
 .nav-link {
     color: #a0a0a0; text-decoration: none; font-size: 0.875rem;
