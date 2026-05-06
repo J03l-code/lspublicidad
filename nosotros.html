@@ -1,234 +1,423 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosotros | LS Publicidad & Eventos</title>
-    <meta name="description" content="Conoce a LS Publicidad & Eventos. Más de 5 años de experiencia en publicidad y producción de eventos.">
+    <meta name="description"
+        content="Conoce a LS Publicidad & Eventos. Más de 5 años de experiencia en publicidad y producción de eventos.">
     <meta property="og:title" content="Nosotros | LS Publicidad & Eventos">
     <meta property="og:image" content="logo.png">
     <link rel="icon" href="logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>tailwind.config={theme:{extend:{colors:{gold:'#D4AF37','gold-light':'#f0d060',dark:'#0a0a0a'},fontFamily:{syne:['Syne'],inter:['Inter']}}}}</script>
+    <script>tailwind.config = { theme: { extend: { colors: { gold: '#D4AF37', 'gold-light': '#f0d060', dark: '#0a0a0a' }, fontFamily: { syne: ['Syne'], inter: ['Inter'] } } } }</script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="style.css?v=1778037387420">
 </head>
+
 <body class="bg-dark text-white font-inter">
 
-<!-- NAV -->
-<nav class="nav-main flex items-center justify-between">
-    <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
-    <div class="nav-links hidden md:flex items-center gap-8">
-        <a href="servicios.html" class="nav-link">Servicios</a>
-        <a href="portafolio.html" class="nav-link">Portafolio</a>
-        <a href="nosotros.html" class="nav-link" style="color:#D4AF37">Nosotros</a>
-        <a href="contacto.html" class="nav-link">Contacto</a>
-        <a href="https://wa.me/593987393431" class="hero-cta text-sm py-2 px-5" target="_blank"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp</a>
+    <!-- NAV -->
+    <nav class="nav-main">
+    <div class="max-w-7xl mx-auto flex items-center justify-between w-full">
+        <!-- LEFT: LOGO -->
+        <div class="flex items-center gap-4 flex-1">
+            <a href="index.html"><img src="logo.png" alt="LS Publicidad" class="nav-logo"></a>
+            <div class="hidden xl:block h-6 w-px bg-white/20"></div>
+            <span class="hidden xl:block text-xs tracking-[0.2em] text-gold font-syne uppercase mt-1">Eventos Premium</span>
+        </div>
+
+        <!-- CENTER: LINKS -->
+        <div class="nav-links hidden md:flex items-center justify-center gap-8 flex-1">
+            <a href="servicios.html" class="nav-link">Servicios</a>
+            <a href="portafolio.html" class="nav-link">Portafolio</a>
+            <a href="nosotros.html" class="nav-link" style="color:#D4AF37">Nosotros</a>
+            <a href="contacto.html" class="nav-link">Contacto</a>
+        </div>
+
+        <!-- RIGHT: CTA -->
+        <div class="hidden md:flex items-center justify-end gap-6 flex-1">
+            <div class="flex items-center gap-4">
+                 <a href="#" class="text-gray-400 hover:text-gold transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                 <a href="https://www.instagram.com/lspublicidad.eventos/" target="_blank" class="text-gray-400 hover:text-gold transition-colors"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a>
+            </div>
+            <a href="https://wa.me/593987393431" class="hero-cta text-xs py-2 px-5" target="_blank"><i data-lucide="message-circle" style="width:16px;height:16px"></i> WhatsApp</a>
+        </div>
+
+        <!-- MOBILE TOGGLE -->
+        <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
     </div>
-    <div class="hamburger md:hidden" id="menuToggle"><span></span><span></span><span></span></div>
 </nav>
-<div class="mobile-menu" id="mobileMenu">
-    <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="portafolio.html">Portafolio</a><a href="nosotros.html" style="color:#D4AF37">Nosotros</a><a href="contacto.html">Contacto</a>
-</div>
-
-<!-- PAGE HEADER -->
-<section class="pt-32 pb-16 px-6 text-center">
-    <span class="section-label" data-aos="fade-up">Quiénes somos</span>
-    <h1 class="font-syne text-4xl md:text-6xl font-extrabold mt-4" data-aos="fade-up">Sobre <span class="text-gradient">Nosotros</span></h1>
-</section>
-
-<!-- ABOUT CONTENT -->
-<section class="pb-24 px-6">
-    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-        <div data-aos="fade-right">
-            <h2 class="font-syne text-3xl font-extrabold mb-6">Impulsamos tu <span class="text-gradient">marca</span> al siguiente nivel</h2>
-            <p class="text-gray-400 leading-relaxed mb-4">En LS Publicidad & Eventos combinamos creatividad estratégica con producción de eventos de primer nivel. Somos una agencia integral que entiende las necesidades de cada cliente y transforma ideas en resultados tangibles.</p>
-            <p class="text-gray-400 leading-relaxed mb-4">Desde diseño gráfico y branding hasta la producción de eventos masivos, cada proyecto refleja nuestro compromiso con la excelencia y la innovación.</p>
-            <p class="text-gray-400 leading-relaxed mb-8">Nuestro equipo multidisciplinario de creativos, diseñadores, productores y estrategas trabaja en conjunto para entregar soluciones que superan expectativas.</p>
-            <a href="contacto.html" class="hero-cta"><i data-lucide="arrow-right" style="width:16px;height:16px"></i> Trabaja con Nosotros</a>
-        </div>
-        <div class="relative" data-aos="fade-left">
-            <div class="rounded-2xl overflow-hidden border border-white/10 bg-cover bg-center relative" style="height:400px;background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('img/about.png')">
-                <div class="absolute inset-0 flex items-center justify-center">
-                    <img src="logo.png" alt="LS Publicidad" style="width:200px;filter:invert(1) brightness(2);opacity:0.3">
-                </div>
-            </div>
-            <div class="absolute -bottom-6 -left-6 glass-card py-4 px-6" data-aos="zoom-in" data-aos-delay="200">
-                <p class="text-gradient font-syne font-extrabold text-2xl">5+</p>
-                <p class="text-gray-400 text-sm">Años de experiencia</p>
-            </div>
-            <div class="absolute -top-6 -right-6 glass-card py-4 px-6" data-aos="zoom-in" data-aos-delay="400">
-                <p class="text-gradient font-syne font-extrabold text-2xl">150+</p>
-                <p class="text-gray-400 text-sm">Proyectos entregados</p>
-            </div>
-        </div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="portafolio.html">Portafolio</a><a
+            href="nosotros.html" style="color:#D4AF37">Nosotros</a><a href="contacto.html">Contacto</a>
     </div>
-</section>
 
-<!-- VALORES -->
-<section class="py-24 px-6 border-y border-white/5">
-    <div class="max-w-6xl mx-auto">
-        <h2 class="font-syne text-3xl font-extrabold text-center mb-16" data-aos="fade-up">Nuestros <span class="text-gradient">Valores</span></h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="glass-card text-center" data-aos="fade-up">
-                <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background:rgba(212,175,55,0.1)"><i data-lucide="lightbulb" style="width:28px;height:28px;color:#D4AF37"></i></div>
-                <h3 class="font-syne text-xl font-bold mb-3">Creatividad</h3>
-                <p class="text-gray-400 text-sm">Cada proyecto es una oportunidad para innovar y crear soluciones únicas que destaquen.</p>
-            </div>
-            <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background:rgba(212,175,55,0.1)"><i data-lucide="shield-check" style="width:28px;height:28px;color:#D4AF37"></i></div>
-                <h3 class="font-syne text-xl font-bold mb-3">Compromiso</h3>
-                <p class="text-gray-400 text-sm">Nos comprometemos con la calidad y el cumplimiento en cada detalle de tu proyecto.</p>
-            </div>
-            <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center" style="background:rgba(212,175,55,0.1)"><i data-lucide="heart-handshake" style="width:28px;height:28px;color:#D4AF37"></i></div>
-                <h3 class="font-syne text-xl font-bold mb-3">Confianza</h3>
-                <p class="text-gray-400 text-sm">Construimos relaciones duraderas basadas en la transparencia y resultados medibles.</p>
-            </div>
-        </div>
-    </div>
-</section>
+    <!-- PAGE HEADER -->
+    <section class="pt-32 pb-16 px-6 text-center">
+        <span class="section-label" data-aos="fade-up">Quiénes somos</span>
+        <h1 class="font-syne text-4xl md:text-6xl font-extrabold mt-4" data-aos="fade-up">Sobre <span
+                class="text-gradient">Nosotros</span></h1>
+    </section>
 
-<!-- TESTIMONIOS -->
-<section class="py-24 px-6">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="section-label" data-aos="fade-up">Opiniones</span>
-            <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4" data-aos="fade-up">Lo que dicen nuestros <span class="text-gradient">clientes</span></h2>
-        </div>
-        <div class="overflow-hidden relative" data-aos="fade-up">
-            <div class="testimonial-track flex transition-transform duration-700 ease-out">
-                <div class="testimonial-slide min-w-full px-4">
-                    <div class="glass-card max-w-2xl mx-auto text-center">
-                        <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold" style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">MC</div>
-                        <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"LS Publicidad transformó completamente la imagen de nuestra empresa. Su creatividad y profesionalismo superaron todas nuestras expectativas."</p>
-                        <p class="font-syne font-bold text-white">María Castillo</p>
-                        <p class="text-gold text-sm">Directora de Marketing</p>
+    <!-- ABOUT CONTENT -->
+    <section class="pb-24 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div data-aos="fade-right">
+                <h2 class="font-syne text-3xl font-extrabold mb-6">Impulsamos tu <span
+                        class="text-gradient">marca</span> al siguiente nivel</h2>
+                <p class="text-gray-400 leading-relaxed mb-4">En LS Publicidad & Eventos combinamos creatividad
+                    estratégica con producción de eventos de primer nivel. Somos una agencia integral que entiende las
+                    necesidades de cada cliente y transforma ideas en resultados tangibles.</p>
+                <p class="text-gray-400 leading-relaxed mb-4">Desde diseño gráfico y branding hasta la producción de
+                    eventos masivos, cada proyecto refleja nuestro compromiso con la excelencia y la innovación.</p>
+                <p class="text-gray-400 leading-relaxed mb-8">Nuestro equipo multidisciplinario de creativos,
+                    diseñadores, productores y estrategas trabaja en conjunto para entregar soluciones que superan
+                    expectativas.</p>
+                <a href="contacto.html" class="hero-cta"><i data-lucide="arrow-right"
+                        style="width:16px;height:16px"></i> Trabaja con Nosotros</a>
+            </div>
+            <div class="relative" data-aos="fade-left">
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-cover bg-center relative"
+                    style="height:400px;background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('img/about.png')">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <img src="logo.png" alt="LS Publicidad"
+                            style="width:200px;filter:invert(1) brightness(2);opacity:0.3">
                     </div>
                 </div>
-                <div class="testimonial-slide min-w-full px-4">
-                    <div class="glass-card max-w-2xl mx-auto text-center">
-                        <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold" style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">RG</div>
-                        <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"El evento que organizaron fue espectacular. Cada detalle estuvo cuidado al máximo. Sin duda, los recomiendo."</p>
-                        <p class="font-syne font-bold text-white">Roberto González</p>
-                        <p class="text-gold text-sm">CEO, Grupo Empresarial</p>
+                <div class="absolute -bottom-6 -left-6 glass-card py-4 px-6" data-aos="zoom-in" data-aos-delay="200">
+                    <p class="text-gradient font-syne font-extrabold text-2xl">5+</p>
+                    <p class="text-gray-400 text-sm">Años de experiencia</p>
+                </div>
+                <div class="absolute -top-6 -right-6 glass-card py-4 px-6" data-aos="zoom-in" data-aos-delay="400">
+                    <p class="text-gradient font-syne font-extrabold text-2xl">150+</p>
+                    <p class="text-gray-400 text-sm">Proyectos entregados</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VALORES -->
+    <section class="py-24 px-6 border-y border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="font-syne text-3xl font-extrabold text-center mb-16" data-aos="fade-up">Nuestros <span
+                    class="text-gradient">Valores</span></h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="glass-card text-center" data-aos="fade-up">
+                    <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center"
+                        style="background:rgba(212,175,55,0.1)"><i data-lucide="lightbulb"
+                            style="width:28px;height:28px;color:#D4AF37"></i></div>
+                    <h3 class="font-syne text-xl font-bold mb-3">Creatividad</h3>
+                    <p class="text-gray-400 text-sm">Cada proyecto es una oportunidad para innovar y crear soluciones
+                        únicas que destaquen.</p>
+                </div>
+                <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center"
+                        style="background:rgba(212,175,55,0.1)"><i data-lucide="shield-check"
+                            style="width:28px;height:28px;color:#D4AF37"></i></div>
+                    <h3 class="font-syne text-xl font-bold mb-3">Compromiso</h3>
+                    <p class="text-gray-400 text-sm">Nos comprometemos con la calidad y el cumplimiento en cada detalle
+                        de tu proyecto.</p>
+                </div>
+                <div class="glass-card text-center" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-16 h-16 rounded-2xl mx-auto mb-6 flex items-center justify-center"
+                        style="background:rgba(212,175,55,0.1)"><i data-lucide="heart-handshake"
+                            style="width:28px;height:28px;color:#D4AF37"></i></div>
+                    <h3 class="font-syne text-xl font-bold mb-3">Confianza</h3>
+                    <p class="text-gray-400 text-sm">Construimos relaciones duraderas basadas en la transparencia y
+                        resultados medibles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="section-label" data-aos="fade-up">Opiniones</span>
+                <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4" data-aos="fade-up">Lo que dicen nuestros
+                    <span class="text-gradient">clientes</span></h2>
+            </div>
+            <div class="overflow-hidden relative" data-aos="fade-up">
+                <div class="testimonial-track flex transition-transform duration-700 ease-out">
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="glass-card max-w-2xl mx-auto text-center">
+                            <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold"
+                                style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">MC</div>
+                            <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"LS Publicidad transformó
+                                completamente la imagen de nuestra empresa. Su creatividad y profesionalismo superaron
+                                todas nuestras expectativas."</p>
+                            <p class="font-syne font-bold text-white">María Castillo</p>
+                            <p class="text-gold text-sm">Directora de Marketing</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="glass-card max-w-2xl mx-auto text-center">
+                            <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold"
+                                style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">RG</div>
+                            <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"El evento que organizaron fue
+                                espectacular. Cada detalle estuvo cuidado al máximo. Sin duda, los recomiendo."</p>
+                            <p class="font-syne font-bold text-white">Roberto González</p>
+                            <p class="text-gold text-sm">CEO, Grupo Empresarial</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-slide min-w-full px-4">
+                        <div class="glass-card max-w-2xl mx-auto text-center">
+                            <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold"
+                                style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">LP</div>
+                            <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"Nuestra rotulación vehicular
+                                quedó increíble. Ahora nuestra flota es una valla publicitaria rodante."</p>
+                            <p class="font-syne font-bold text-white">Laura Pérez</p>
+                            <p class="text-gold text-sm">Gerente de Operaciones</p>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-slide min-w-full px-4">
-                    <div class="glass-card max-w-2xl mx-auto text-center">
-                        <div class="w-16 h-16 rounded-full mx-auto mb-6 flex items-center justify-center text-2xl font-syne font-bold" style="background:linear-gradient(135deg,#D4AF37,#f0d060);color:#0a0a0a">LP</div>
-                        <p class="text-gray-300 text-lg leading-relaxed italic mb-6">"Nuestra rotulación vehicular quedó increíble. Ahora nuestra flota es una valla publicitaria rodante."</p>
-                        <p class="font-syne font-bold text-white">Laura Pérez</p>
-                        <p class="text-gold text-sm">Gerente de Operaciones</p>
+                <div class="flex justify-center gap-3 mt-8">
+                    <button class="testimonial-dot active w-3 h-3 rounded-full bg-white/20 transition-all"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-white/20 transition-all"></button>
+                    <button class="testimonial-dot w-3 h-3 rounded-full bg-white/20 transition-all"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .testimonial-dot.active {
+            background: #D4AF37;
+            transform: scale(1.3)
+        }
+    </style>
+
+
+    <!-- THE TEAM -->
+    <section class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="section-label" data-aos="fade-up">Nuestro Equipo</span>
+                <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4" data-aos="fade-up">Mentes <span
+                        class="text-gradient">Creativas</span></h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="glass-card text-center p-8 group" data-aos="fade-up">
+                    <div
+                        class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
+                        <img src="https://placehold.co/400x400/111/D4AF37?text=CEO&font=Syne" alt="CEO"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-syne text-xl font-bold mb-1">Robert C.</h3>
+                    <p class="text-gold text-sm font-semibold mb-4">CEO & Director Creativo</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="glass-card text-center p-8 group" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
+                        <img src="https://placehold.co/400x400/111/D4AF37?text=ART&font=Syne" alt="Directora de Arte"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-syne text-xl font-bold mb-1">Valentina R.</h3>
+                    <p class="text-gold text-sm font-semibold mb-4">Directora de Arte</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="glass-card text-center p-8 group" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
+                        <img src="https://placehold.co/400x400/111/D4AF37?text=EVT&font=Syne" alt="Productor General"
+                            class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+                    </div>
+                    <h3 class="font-syne text-xl font-bold mb-1">Martín C.</h3>
+                    <p class="text-gold text-sm font-semibold mb-4">Productor General de Eventos</p>
+                    <div class="flex justify-center gap-3">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                                <rect x="2" y="9" width="4" height="12" />
+                                <circle cx="4" cy="4" r="2" />
+                            </svg></a>
                     </div>
                 </div>
             </div>
-            <div class="flex justify-center gap-3 mt-8">
-                <button class="testimonial-dot active w-3 h-3 rounded-full bg-white/20 transition-all"></button>
-                <button class="testimonial-dot w-3 h-3 rounded-full bg-white/20 transition-all"></button>
-                <button class="testimonial-dot w-3 h-3 rounded-full bg-white/20 transition-all"></button>
+        </div>
+    </section>
+
+    <!-- TRUSTED BY -->
+    <section class="py-16 border-y border-white/5">
+        <p class="text-center text-gray-500 text-xs tracking-widest uppercase mb-8">Confían en nosotros</p>
+        <div class="marquee-container">
+            <div class="marquee-track">
+
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 22h20L12 2z" />
+                    </svg> LUMINA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2L12 22M2 12L22 12" />
+                    </svg> NEXUS</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg> VERTEX</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                    </svg> AURA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    </svg> OMNI</span>
+
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 22h20L12 2z" />
+                    </svg> LUMINA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2L12 22M2 12L22 12" />
+                    </svg> NEXUS</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg> VERTEX</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                    </svg> AURA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    </svg> OMNI</span>
+
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 22h20L12 2z" />
+                    </svg> LUMINA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="12" cy="12" r="10" />
+                        <path d="M12 2L12 22M2 12L22 12" />
+                    </svg> NEXUS</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                    </svg> VERTEX</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2" />
+                    </svg> AURA</span>
+                <span
+                    class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg
+                        width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path
+                            d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+                    </svg> OMNI</span>
+
             </div>
         </div>
-    </div>
-</section>
-<style>.testimonial-dot.active{background:#D4AF37;transform:scale(1.3)}</style>
+    </section>
 
-
-<!-- THE TEAM -->
-<section class="py-24 px-6 border-t border-white/5">
-    <div class="max-w-6xl mx-auto">
-        <div class="text-center mb-16">
-            <span class="section-label" data-aos="fade-up">Nuestro Equipo</span>
-            <h2 class="font-syne text-3xl md:text-5xl font-extrabold mt-4" data-aos="fade-up">Mentes <span class="text-gradient">Creativas</span></h2>
-        </div>
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Card 1 -->
-            <div class="glass-card text-center p-8 group" data-aos="fade-up">
-                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
-                    <img src="https://placehold.co/400x400/111/D4AF37?text=CEO&font=Syne" alt="CEO" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
+    <!-- FOOTER -->
+    <footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="md:col-span-2"><img src="logo.png" alt="LS Publicidad"
+                        style="height:50px;filter:invert(1) brightness(2)" class="mb-4">
+                    <p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos
+                        premium.</p>
+                    <div class="flex gap-4 mt-6"><a href="#"
+                            class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                            </svg></a><a href="https://www.instagram.com/lspublicidad.eventos/" target="_blank"
+                            class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                            </svg></a></div>
                 </div>
-                <h3 class="font-syne text-xl font-bold mb-1">Alejandro V.</h3>
-                <p class="text-gold text-sm font-semibold mb-4">CEO & Director Creativo</p>
-                <div class="flex justify-center gap-3">
-                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <div>
+                    <h4 class="font-syne font-bold text-white mb-4">Navegación</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li><a href="index.html" class="hover:text-gold transition-colors">Inicio</a></li>
+                        <li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li>
+                        <li><a href="portafolio.html" class="hover:text-gold transition-colors">Portafolio</a></li>
+                        <li><a href="contacto.html" class="hover:text-gold transition-colors">Contacto</a></li>
+                    </ul>
                 </div>
-            </div>
-            <!-- Card 2 -->
-            <div class="glass-card text-center p-8 group" data-aos="fade-up" data-aos-delay="100">
-                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
-                    <img src="https://placehold.co/400x400/111/D4AF37?text=ART&font=Syne" alt="Directora de Arte" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
-                </div>
-                <h3 class="font-syne text-xl font-bold mb-1">Valentina R.</h3>
-                <p class="text-gold text-sm font-semibold mb-4">Directora de Arte</p>
-                <div class="flex justify-center gap-3">
-                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-                </div>
-            </div>
-            <!-- Card 3 -->
-            <div class="glass-card text-center p-8 group" data-aos="fade-up" data-aos-delay="200">
-                <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-2 border-gold/30 group-hover:border-gold transition-colors relative">
-                    <img src="https://placehold.co/400x400/111/D4AF37?text=EVT&font=Syne" alt="Productor General" class="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500">
-                </div>
-                <h3 class="font-syne text-xl font-bold mb-1">Martín C.</h3>
-                <p class="text-gold text-sm font-semibold mb-4">Productor General de Eventos</p>
-                <div class="flex justify-center gap-3">
-                    <a href="#" class="text-gray-500 hover:text-white transition-colors"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                <div>
+                    <h4 class="font-syne font-bold text-white mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-sm text-gray-400">
+                        <li>Laserstudiocumbaya@gmail.com</li>
+                        <li>+593 98 739 3431</li>
+                    </ul>
                 </div>
             </div>
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 px-6">
+                <p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos. Todos los derechos reservados.</p>
+                <a href="#"
+                    class="text-gray-500 text-xs tracking-[0.15em] font-syne group hover:text-white transition-all duration-300 uppercase flex items-center gap-2">
+                    Desarrollado por <span
+                        class="text-gradient font-bold group-hover:drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-all">JiyaneDesign</span>
+                    <i data-lucide="sparkles" style="width:14px;height:14px;color:#D4AF37"></i>
+                </a>
+            </div>
         </div>
-    </div>
-</section>
+    </footer>
 
-<!-- TRUSTED BY -->
-<section class="py-16 border-y border-white/5">
-    <p class="text-center text-gray-500 text-xs tracking-widest uppercase mb-8">Confían en nosotros</p>
-    <div class="marquee-container">
-        <div class="marquee-track">
-
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg> LUMINA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2L12 22M2 12L22 12"/></svg> NEXUS</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> VERTEX</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg> AURA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> OMNI</span>
-
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg> LUMINA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2L12 22M2 12L22 12"/></svg> NEXUS</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> VERTEX</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg> AURA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> OMNI</span>
-
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 22h20L12 2z"/></svg> LUMINA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2L12 22M2 12L22 12"/></svg> NEXUS</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg> VERTEX</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 22 8.5 22 15.5 12 22 2 15.5 2 8.5 12 2"/></svg> AURA</span>
-            <span class="flex items-center gap-3 text-2xl font-syne font-bold text-white/20 flex-shrink-0 hover:text-white transition-colors duration-300"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg> OMNI</span>
-
-        </div>
-    </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer-gradient border-t border-white/5 pt-16 pb-8 px-6">
-    <div class="max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-4 gap-12 mb-12">
-            <div class="md:col-span-2"><img src="logo.png" alt="LS Publicidad" style="height:50px;filter:invert(1) brightness(2)" class="mb-4"><p class="text-gray-400 text-sm leading-relaxed max-w-md">Agencia creativa y productora de eventos premium.</p><div class="flex gap-4 mt-6"><a href="#" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a><a href="https://www.instagram.com/lspublicidad.eventos/" target="_blank" class="w-10 h-10 rounded-full flex items-center justify-center border border-white/10 text-gray-400 hover:border-gold hover:text-gold transition-all"><svg xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></a></div></div>
-            <div><h4 class="font-syne font-bold text-white mb-4">Navegación</h4><ul class="space-y-2 text-sm text-gray-400"><li><a href="index.html" class="hover:text-gold transition-colors">Inicio</a></li><li><a href="servicios.html" class="hover:text-gold transition-colors">Servicios</a></li><li><a href="portafolio.html" class="hover:text-gold transition-colors">Portafolio</a></li><li><a href="contacto.html" class="hover:text-gold transition-colors">Contacto</a></li></ul></div>
-            <div><h4 class="font-syne font-bold text-white mb-4">Contacto</h4><ul class="space-y-2 text-sm text-gray-400"><li>Laserstudiocumbaya@gmail.com</li><li>+593 98 739 3431</li></ul></div>
-        </div>
-        <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 px-6">
-            <p class="text-gray-500 text-xs">&copy; 2026 LS Publicidad & Eventos. Todos los derechos reservados.</p>
-            <a href="#" class="text-gray-500 text-xs tracking-[0.15em] font-syne group hover:text-white transition-all duration-300 uppercase flex items-center gap-2">
-                Desarrollado por <span class="text-gradient font-bold group-hover:drop-shadow-[0_0_12px_rgba(212,175,55,0.6)] transition-all">JiyaneDesign</span>
-                <i data-lucide="sparkles" style="width:14px;height:14px;color:#D4AF37"></i>
-            </a>
-        </div>        </div>
-</footer>
-
-<a href="https://wa.me/593987393431" class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110" style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank"><i data-lucide="message-circle" style="width:24px;height:24px;color:#0a0a0a"></i></a>
-<script src="app.js?v=1778037387420"></script>
+    <a href="https://wa.me/593987393431"
+        class="wa-float fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center shadow-2xl transition-transform hover:scale-110"
+        style="background:linear-gradient(135deg,#D4AF37,#f0d060)" target="_blank"><i data-lucide="message-circle"
+            style="width:24px;height:24px;color:#0a0a0a"></i></a>
+    <script src="app.js?v=1778037387420"></script>
 </body>
+
 </html>
