@@ -90,8 +90,7 @@ body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; overf
     height: 100%;
     object-fit: cover;
     z-index: 1;
-    opacity: 0.8;
-}
+    }
 .hero-left .overlay, .hero-right .overlay { z-index: 2; }
 .hero-content { z-index: 3; }
 
@@ -106,8 +105,8 @@ body { background: #0a0a0a; color: #fff; font-family: 'Inter', sans-serif; overf
     position: absolute; inset: 0;
     transition: opacity 0.7s;
 }
-.hero-left { background: url('img/hero-creative.png') center/cover no-repeat; }
-.hero-right { background: url('img/hero-event.png') center/cover no-repeat; }
+.hero-left { }
+.hero-right { }
 .hero-left .overlay { background: rgba(10, 10, 15, 0.7); }
 .hero-right .overlay { background: rgba(15, 10, 10, 0.7); }
 .hero-half:hover .overlay { background: rgba(0, 0, 0, 0.4); }
